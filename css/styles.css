@@ -560,9 +560,14 @@ body {
 	align-items: center;
 	padding: 10px 28px;
 	cursor: pointer;
-
-
 }
+.foter-btn:hover,
+.foter-btn:focus {
+	color: var(--primery-bg-color);
+	background-color: var(--accent-button-color);
+}
+	
+	
 
 /* Portfolio */
 
@@ -750,6 +755,8 @@ body {
 	flex-direction: column;
 	margin-bottom: 10px;
 }
+
+
 .form-element .form-label {
 	margin-bottom: 4px;
 	font-weight: 400;
@@ -803,7 +810,7 @@ body {
 	color: rgba(117, 117, 117, 0.5);
 }
 .modal-form .btn{
-	margin-top: 30px;
+	margin-top: 20px;
 	margin-left: 124px;
 	margin-right: 124px;
 
@@ -824,7 +831,7 @@ body {
 .form-icon {
 	position: absolute;
 	top: 50%;
-	left: 12px;
+	left: 12px; 
 
 	display: inline-block;
 	transform: translateY(-50%);
@@ -836,9 +843,16 @@ body {
 }
 
 .check {
-	flex-direction: row;
-	margin-top: 20px;
-	margin-left: 14px;
+	margin-top: 10px;
+		
+}
+
+.checkbox-label {
+    display: flex;
+	justify-content: center;
+	align-items: center; 
+	margin-top: 10px;
+		
 }
 
 .text-agree {
@@ -851,4 +865,20 @@ body {
 	font-size: 14px;
 	line-height: 1.71;
 	color: var(--accent-color);
+}
+.check-icon {
+	margin-right: 7px;
+	
+}
+.checkbox-label .vector-box {
+	opacity: 1;
+}
+.checkbox-label .check-final {
+	opacity: 0;
+}
+.checkbox-label input:checked + .check-icon > .check-final {
+	opacity: 1;
+}
+.checkbox-label input:checked + .check-icon > .vector-box {
+	opacity: 0;
 }
