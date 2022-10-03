@@ -852,8 +852,15 @@ body {
 	justify-content: center;
 	align-items: center; 
 	margin-top: 10px;
-		
+			
 }
+/* --Варіант як можно сховити браузерний чекбокс--
+.checkbox-label input {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+
+}  */
 
 .text-agree {
 	font-weight: 400;
